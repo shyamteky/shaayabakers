@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cart - Sweet Bakery</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Rock+Salt&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Math&family=Libertinus+Mono&display=swap" rel="stylesheet" />
+  <style>
+    /* Additional Cart-specific styling */
+    #cart {
+      max-width: 600px;
+      margin: 40px auto;
+      background: pink;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    #cart ul {
+      list-style: none;
+      padding: 0;
+    }
+    #cart li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    #cart button {
+      background: orangered;
+      border: none;
+      color: black;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #cart button:hover {
+      background: #e04d51;
+    }
+    #cart h3 {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 700;
+      color: brown;
+    }
+    .place-order-btn {
+      display: block;
+      width: 100%;
+      max-width: 150px;
+      padding: 12px;
+      background: orange;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 40px;
+      margin-left: 200px;
+    }
+    .place-order-btn:hover {
+      background: orange;
+    }
+    @media (max-width: 480px) {
+      #cart li {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #cart button {
+        margin-top: 8px;
+      }
+      #cart h3 {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body class="style">
+  <nav>
+    <img src="123.png" alt="Logo" />
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="menu.html">MENU</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+      <li><a href="cart.html">CART</a></li>
+    </ul>
+  </nav>
+
+  <div id="cart"></div>
+
+  <button class="place-order-btn" onclick="placeOrder()">🚀 Place Order</button>
+
+  <script src="cart.js"></script>
+</body>
+</html>
